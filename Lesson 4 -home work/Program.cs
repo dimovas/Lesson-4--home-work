@@ -10,6 +10,21 @@ namespace Lesson_4__home_work
     {
         static void Main(string[] args)
         {
+            Task1();
+        }
+
+        private static void Task1()
+        {
+            Console.WriteLine("Input a");
+            int a = Convert.ToInt32(Console.ReadLine()), n = 0;
+            int t = a;
+            while(t > 0)
+            {
+                t /= 10; 
+                n++;
+            }
+            Console.WriteLine($"Количество разрядов:{n}");
+            Console.WriteLine($"a = {a}, t = {t}");
         }
     }
 }
