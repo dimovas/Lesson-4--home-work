@@ -20,10 +20,11 @@ namespace Lesson_4__home_work
             int t = a;
             while(t > 0)
             {
+                Console.WriteLine($"t%10 = {t%10}");
                 t /= 10; 
-                n++;
+                n++;               
             }
-            Console.WriteLine($"Количество разрядов:{n}");
+            Console.WriteLine($"Количество разрядов n = {n}");
             Console.WriteLine($"a = {a}, t = {t}");
         }
     }
